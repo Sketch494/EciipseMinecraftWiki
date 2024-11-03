@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <button class="close-button" id="close-button">✖</button>
+            <h2>Player Controls</h2>
+            <button id="load-video">Load Video</button>
+            <input type="text" id="video-url" placeholder="Enter YouTube Video URL" />
+            <button id="get-code">Get Embed Code</button>
+            <h3>Customization</h3>
+            <button id="minimize-button">Minimize Player</button>
+            <button id="pop-out-button">Pop Out</button>
+        </aside>
+        
+        <main class="video-container" id="video-container">
+            <div class="video-controls">
+                <button id="maximize-button">+</button>
+                <button id="minimize-button-player">✖</button>
+            </div>
+            <iframe id="youtube-iframe" src="" frameborder="0" allowfullscreen></iframe>
+            <div class="code-box" id="code-box">
+                <h3>Embed Code</h3>
+                <pre id="embed-code"></pre>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
